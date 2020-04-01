@@ -1,0 +1,16 @@
+.git
+node_modules
+.DS_Store
+.vscode
+npm-debug.log
+log.txt
+*.tmp
+*.tmp.*
+.idea
+.ionic
+coverage
+tmp
+temp
+$RECYCLE.BIN
+postgres_dev
+logfile
