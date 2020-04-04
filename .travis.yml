@@ -1,15 +1,9 @@
 language: minimal
 
-node_js:
-  - 13
-
 services:
   - docker
 
 before_install:
   - docker -v && docker-compose -v
 
-install:
-  - echo `Building docker image for udacity-c3-frontend`
-  - docker build -t dzarate/udacity-c3-frontend .
-  - echo `Successfully built docker image for udacity-c3-frontend`
+script: ./build.sh
