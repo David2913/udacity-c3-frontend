@@ -7,7 +7,7 @@ if [ "$BUILD_ENV" == "production" ]; then
   mv src/environments/environment.prod.ts src/environments/environment.ts
   docker build -t dzarate/udacity-c3-frontend:latest .
 else
-  echo "Building development image: udacity-c3-frontend:latest-dev"
+  echo "Building development image: dzarate/udacity-c3-frontend:latest-dev"
   rm src/environments/environment.prod.ts
   docker build -t dzarate/udacity-c3-frontend:latest-dev .
 fi
