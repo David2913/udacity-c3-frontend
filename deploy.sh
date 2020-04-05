@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push dzarate/udacity-c3-frontend
 
 if [ "$BUILD_ENV" == "production" ]; then
   echo "Deploying production image: dzarate/udacity-c3-frontend:latest"
