@@ -7,3 +7,8 @@ before_install:
   - docker -v && docker-compose -v
 
 script: ./build.sh
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./deploy.sh
